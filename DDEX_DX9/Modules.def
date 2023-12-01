@@ -1,0 +1,4 @@
+LIBRARY DDEX_DX9
+
+EXPORTS
+	DDEX_Context

@@ -1,0 +1,12 @@
+*.dll
+*.exe
+*.lib
+*.png
+*.jpg
+*.exp
+*.h
+*.cso
+*.log
+*.pdb
+*.lib
+*.zip

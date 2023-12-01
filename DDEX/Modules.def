@@ -1,0 +1,52 @@
+LIBRARY DDEX
+
+EXPORTS
+	Test
+	Render_Create
+	Render_Present
+	Render_DrawImage
+	Render_DrawScaleImage
+	Render_DrawImageWithRotation
+	Render_FlushScreen
+	Render_FlushBackground
+	Render_Clean
+	Render_Destroy
+	Render_CleanLight
+	Render_SetLight
+	Render_SetMasterLight
+	Render_SetRenderEffect
+    Render_SetPresentEffect
+	Render_ClearPresentEffect
+	Render_MakeFont
+	Render_DrawFont
+	Render_GetFontHDC
+	Render_SetImageProxy
+
+	Animation_Make
+	Animation_Delete
+
+	ColorAnimation_Create
+	ColorAnimation_IsComplete
+	ColorAnimation_Start
+	ColorAnimation_StartWithTicks
+	ColorAnimation_Tick
+	ColorAnimation_TickWithTicks
+	ColorAnimation_GetColor
+	ColorAnimation_GetColorAndIsComplete
+	ColorAnimation_Delete
+	ColorAnimation_GetColorRef
+	ColorAnimation_Configure
+
+	UI_CreateUIComponentManager
+	UI_DestroyUIComponentManager
+	UI_GetUIComponent
+	UI_CreateUICursorManager
+	UI_DestroyUICursorManager
+	UI_GetUICursor
+
+	Primitive_DrawBox
+	Primitive_DrawFillBox
+	Primitive_DrawLine
+	Primitive_Get
+
+	DDEX_Create

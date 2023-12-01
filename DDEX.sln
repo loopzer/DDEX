@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DDEX", "DDEX\DDEX.vcxproj", "{4A08BE04-B9C5-4060-8EC6-F04255D8918C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DDEX_DX9", "DDEX_DX9\DDEX_DX9.vcxproj", "{E377BC33-8313-4B8E-9588-BA8B2009373D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDEXNet", "DDEXNet\DDEXNet.csproj", "{9CB6083A-D573-4619-80FC-4CC941DD697F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4A08BE04-B9C5-4060-8EC6-F04255D8918C} = {4A08BE04-B9C5-4060-8EC6-F04255D8918C}
+		{E377BC33-8313-4B8E-9588-BA8B2009373D} = {E377BC33-8313-4B8E-9588-BA8B2009373D}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDEXNetApp", "DDEXNetApp\DDEXNetApp.csproj", "{CACB2D2D-6D67-46C3-89A8-27C2B1AB6AD5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4A08BE04-B9C5-4060-8EC6-F04255D8918C} = {4A08BE04-B9C5-4060-8EC6-F04255D8918C}
+		{E377BC33-8313-4B8E-9588-BA8B2009373D} = {E377BC33-8313-4B8E-9588-BA8B2009373D}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDEXToolKit", "DDEXToolKit\DDEXToolKit.csproj", "{38507A41-2290-4156-8CF7-F1292DC08984}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DDEXTest", "DDEXTest\DDEXTest.vcxproj", "{03CC2BEF-A638-485F-BB06-FE0AA27013C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release XP|Win32 = Release XP|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A08BE04-B9C5-4060-8EC6-F04255D8918C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4A08BE04-B9C5-4060-8EC6-F04255D8918C}.Debug|Win32.Build.0 = Debug|Win32
+		{4A08BE04-B9C5-4060-8EC6-F04255D8918C}.Release XP|Win32.ActiveCfg = Release XP|Win32
+		{4A08BE04-B9C5-4060-8EC6-F04255D8918C}.Release XP|Win32.Build.0 = Release XP|Win32
+		{4A08BE04-B9C5-4060-8EC6-F04255D8918C}.Release|Win32.ActiveCfg = Release|Win32
+		{4A08BE04-B9C5-4060-8EC6-F04255D8918C}.Release|Win32.Build.0 = Release|Win32
+		{E377BC33-8313-4B8E-9588-BA8B2009373D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E377BC33-8313-4B8E-9588-BA8B2009373D}.Debug|Win32.Build.0 = Debug|Win32
+		{E377BC33-8313-4B8E-9588-BA8B2009373D}.Release XP|Win32.ActiveCfg = Release XP|Win32
+		{E377BC33-8313-4B8E-9588-BA8B2009373D}.Release XP|Win32.Build.0 = Release XP|Win32
+		{E377BC33-8313-4B8E-9588-BA8B2009373D}.Release|Win32.ActiveCfg = Release|Win32
+		{E377BC33-8313-4B8E-9588-BA8B2009373D}.Release|Win32.Build.0 = Release|Win32
+		{9CB6083A-D573-4619-80FC-4CC941DD697F}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{9CB6083A-D573-4619-80FC-4CC941DD697F}.Debug|Win32.Build.0 = Debug|Any CPU
+		{9CB6083A-D573-4619-80FC-4CC941DD697F}.Release XP|Win32.ActiveCfg = Release|Any CPU
+		{9CB6083A-D573-4619-80FC-4CC941DD697F}.Release XP|Win32.Build.0 = Release|Any CPU
+		{9CB6083A-D573-4619-80FC-4CC941DD697F}.Release|Win32.ActiveCfg = Release|Any CPU
+		{9CB6083A-D573-4619-80FC-4CC941DD697F}.Release|Win32.Build.0 = Release|Any CPU
+		{CACB2D2D-6D67-46C3-89A8-27C2B1AB6AD5}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{CACB2D2D-6D67-46C3-89A8-27C2B1AB6AD5}.Debug|Win32.Build.0 = Debug|Any CPU
+		{CACB2D2D-6D67-46C3-89A8-27C2B1AB6AD5}.Release XP|Win32.ActiveCfg = Release|Any CPU
+		{CACB2D2D-6D67-46C3-89A8-27C2B1AB6AD5}.Release XP|Win32.Build.0 = Release|Any CPU
+		{CACB2D2D-6D67-46C3-89A8-27C2B1AB6AD5}.Release|Win32.ActiveCfg = Release|Any CPU
+		{CACB2D2D-6D67-46C3-89A8-27C2B1AB6AD5}.Release|Win32.Build.0 = Release|Any CPU
+		{38507A41-2290-4156-8CF7-F1292DC08984}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{38507A41-2290-4156-8CF7-F1292DC08984}.Debug|Win32.Build.0 = Debug|Any CPU
+		{38507A41-2290-4156-8CF7-F1292DC08984}.Release XP|Win32.ActiveCfg = Release|Any CPU
+		{38507A41-2290-4156-8CF7-F1292DC08984}.Release XP|Win32.Build.0 = Release|Any CPU
+		{38507A41-2290-4156-8CF7-F1292DC08984}.Release|Win32.ActiveCfg = Release|Any CPU
+		{38507A41-2290-4156-8CF7-F1292DC08984}.Release|Win32.Build.0 = Release|Any CPU
+		{03CC2BEF-A638-485F-BB06-FE0AA27013C2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{03CC2BEF-A638-485F-BB06-FE0AA27013C2}.Debug|Win32.Build.0 = Debug|Win32
+		{03CC2BEF-A638-485F-BB06-FE0AA27013C2}.Release XP|Win32.ActiveCfg = Release|Win32
+		{03CC2BEF-A638-485F-BB06-FE0AA27013C2}.Release XP|Win32.Build.0 = Release|Win32
+		{03CC2BEF-A638-485F-BB06-FE0AA27013C2}.Release|Win32.ActiveCfg = Release|Win32
+		{03CC2BEF-A638-485F-BB06-FE0AA27013C2}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {21328D28-A504-4F77-9AF7-451575D118E4}
+	EndGlobalSection
+EndGlobal

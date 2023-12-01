@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CACB2D2D-6D67-46C3-89A8-27C2B1AB6AD5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DDEXNetApp</RootNamespace>
+    <AssemblyName>DDEXNetApp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animation.cs" />
+    <Compile Include="CreateControls\RenderTextCreateControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateControls\RenderTextCreateControl.Designer.cs">
+      <DependentUpon>RenderTextCreateControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDDEX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDDEX.Designer.cs">
+      <DependentUpon>FrmDDEX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterAnimation.cs" />
+    <Compile Include="PresenterEffectControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PresenterEffectControl.Designer.cs">
+      <DependentUpon>PresenterEffectControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RenderConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RenderConfig.Designer.cs">
+      <DependentUpon>RenderConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RenderAnimation.cs" />
+    <Compile Include="RenderText.cs" />
+    <Compile Include="RenderImage.cs" />
+    <Compile Include="CreateControls\RenderImageCreateControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateControls\RenderImageCreateControl.Designer.cs">
+      <DependentUpon>RenderImageCreateControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RenderObject.cs" />
+    <Compile Include="RenderObjectControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RenderObjectControl.Designer.cs">
+      <DependentUpon>RenderObjectControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateControls\RenderMultiFileAnimationCreateControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateControls\RenderMultiFileAnimationCreateControl.Designer.cs">
+      <DependentUpon>RenderMultiFileAnimationCreateControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateControls\RenderSingleFileAnimationCreateControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateControls\RenderSingleFileAnimationCreateControl.Designer.cs">
+      <DependentUpon>RenderSingleFileAnimationCreateControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SceneEngine\SceneObject.cs" />
+    <EmbeddedResource Include="CreateControls\RenderTextCreateControl.resx">
+      <DependentUpon>RenderTextCreateControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDDEX.resx">
+      <DependentUpon>FrmDDEX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresenterEffectControl.resx">
+      <DependentUpon>PresenterEffectControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RenderConfig.resx">
+      <DependentUpon>RenderConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateControls\RenderImageCreateControl.resx">
+      <DependentUpon>RenderImageCreateControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RenderObjectControl.resx">
+      <DependentUpon>RenderObjectControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateControls\RenderMultiFileAnimationCreateControl.resx">
+      <DependentUpon>RenderMultiFileAnimationCreateControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateControls\RenderSingleFileAnimationCreateControl.resx">
+      <DependentUpon>RenderSingleFileAnimationCreateControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DDEXNet\DDEXNet.csproj">
+      <Project>{9cb6083a-d573-4619-80fc-4cc941dd697f}</Project>
+      <Name>DDEXNet</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
