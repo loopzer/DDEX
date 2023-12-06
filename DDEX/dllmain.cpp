@@ -115,6 +115,17 @@ void __stdcall Render_DrawScaleImage(Render::Render * render, int imageNum, int 
 void __stdcall Render_Present(Render::Render * render) {
 	render->Present();
 }
+void __stdcall Render_PresentWindow(Render::Render* render, HWND hwnd) {
+	RECT windowRect;
+	GetWindowRect(hwnd, &windowRect);
+
+	windowRect.right = windowRect.right - windowRect.left;
+	windowRect.bottom = windowRect.bottom - windowRect.top;
+	windowRect.left = 0;
+	windowRect.top = 0;
+
+	render->Present(hwnd, &windowRect, &windowRect);
+}
 void __stdcall Render_FlushScreen(Render::Render * render) {
 	render->FlushScreen();
 }
