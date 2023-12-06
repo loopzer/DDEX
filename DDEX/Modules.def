@@ -21,6 +21,7 @@ EXPORTS
 	Render_DrawFont
 	Render_GetFontHDC
 	Render_SetImageProxy
+	Render_PresentWindow
 
 	Animation_Make
 	Animation_Delete

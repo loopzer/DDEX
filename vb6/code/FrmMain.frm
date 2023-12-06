@@ -10,6 +10,19 @@ Begin VB.Form FrmMain
    ScaleMode       =   3  'Pixel
    ScaleWidth      =   893
    StartUpPosition =   3  'Windows Default
+   Begin VB.PictureBox picExt 
+      Appearance      =   0  'Flat
+      BackColor       =   &H80000005&
+      ForeColor       =   &H80000008&
+      Height          =   3015
+      Left            =   8040
+      ScaleHeight     =   199
+      ScaleMode       =   3  'Pixel
+      ScaleWidth      =   207
+      TabIndex        =   1
+      Top             =   480
+      Width           =   3135
+   End
    Begin VB.Timer tmRender 
       Enabled         =   0   'False
       Interval        =   6
@@ -37,14 +50,14 @@ Attribute VB_Exposed = False
 Option Explicit
 Private Ddex As New ClsDdex
 Private Animator As New ClsDdexAnimator
-Private fontId As Long
+Private FontId As Long
 Private Sub Form_Load()
     Dim r As Boolean
     Me.Show
     r = Ddex.Init(PicMain.hwnd)
     If r Then
         Set Animator = Ddex.MakeAnimator
-        fontId = Ddex.CreateFont("Arial", 16, False, False)
+        FontId = Ddex.CreateFont("Arial", 16, False, False)
         tmRender.Enabled = True
         
     End If
@@ -76,6 +89,7 @@ Private Sub Render()
     c.r = 255
     c.b = 255
     c.g = 255
+    
     Call Ddex.SetMasterLight(200, 200, 200)
     Call Ddex.CleanLight
     Call Ddex.Clean
@@ -85,8 +99,20 @@ Private Sub Render()
     Call Ddex.DrawImage(6002, 10, 10, r, c)
     Call Ddex.DrawLight(l)
     Call Ddex.FlushScreen
-    Call Ddex.DrawFont("Hi! from DDEX", fontId, 30, 30, c)
+    Call Ddex.DrawFont("Hi! from DDEX", FontId, 30, 30, c)
     Call Ddex.Present
+    
+    Call Ddex.SetMasterLight(200, 200, 200)
+    Call Ddex.CleanLight
+    Call Ddex.Clean
+    
+    Call Ddex.FlushBackground
+    
+    Call Ddex.DrawImage(6002, 10, 10, r, c)
+    Call Ddex.DrawLight(l)
+    Call Ddex.FlushScreen
+    Call Ddex.DrawFont("Hi! from DDEX", FontId, 30, 30, c)
+    Call Ddex.PresentToWindow(picExt.hwnd)
 End Sub
 
 Private Sub PicMain_Click()

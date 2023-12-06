@@ -20,6 +20,7 @@ Private Declare Sub Render_SetMasterLight Lib "DDEX.dll" (ByVal DDEXRender As Lo
 Private Declare Sub Render_Destroy Lib "DDEX.dll" (ByVal DDDEXRender As Long)
 
 Private Declare Sub Render_Present Lib "DDEX.dll" (ByVal DDEXRender As Long)
+Private Declare Sub Render_PresentWindow Lib "DDEX.dll" (ByVal DDEXRender As Long, ByVal hwnd As Long)
 
 Private Declare Sub Render_Clean Lib "DDEX.dll" (ByVal DDEXRender As Long)
 
@@ -65,6 +66,9 @@ End Function
 
 Public Sub Present()
     Call Render_Present(DDEXRender)
+End Sub
+Public Sub PresentToWindow(ByVal hwnd As Long)
+    Call Render_PresentWindow(DDEXRender, hwnd)
 End Sub
 Public Sub FlushScreen()
     Call Render_FlushScreen(DDEXRender)
