@@ -2,6 +2,8 @@
 #ifndef _RENDERDECLARES_H
 #define _RENDERDECLARES_H
 
+#define NOMINMAX
+
 #include <Windows.h>
 #include <math.h>
 namespace DDEX {

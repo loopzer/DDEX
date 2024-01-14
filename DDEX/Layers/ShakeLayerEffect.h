@@ -2,6 +2,7 @@
 
 #ifndef _SHAKELAYEREFFECT_H
 #define _SHAKELAYEREFFECT_H
+#define NOMINMAX
 
 #include <Windows.h>
 #include <functional>

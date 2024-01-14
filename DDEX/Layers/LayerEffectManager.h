@@ -1,6 +1,7 @@
 #pragma once
 #ifndef _LAYEREFFECTMANAGER_H
 #define _LAYEREFFECTMANAGER_H
+#define NOMINMAX
 
 #include <Windows.h>
 #include "LayerDeclares.h"

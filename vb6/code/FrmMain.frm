@@ -1,7 +1,7 @@
 VERSION 5.00
 Begin VB.Form FrmMain 
    Caption         =   "DDEX"
-   ClientHeight    =   8670
+   ClientHeight    =   8670.001
    ClientLeft      =   120
    ClientTop       =   465
    ClientWidth     =   13395
@@ -10,6 +10,14 @@ Begin VB.Form FrmMain
    ScaleMode       =   3  'Pixel
    ScaleWidth      =   893
    StartUpPosition =   3  'Windows Default
+   Begin VB.CommandButton Command1 
+      Caption         =   "Command1"
+      Height          =   735
+      Left            =   8280.001
+      TabIndex        =   2
+      Top             =   3840
+      Width           =   2175
+   End
    Begin VB.PictureBox picExt 
       Appearance      =   0  'Flat
       BackColor       =   &H80000005&
@@ -51,6 +59,11 @@ Option Explicit
 Private Ddex As New ClsDdex
 Private Animator As New ClsDdexAnimator
 Private FontId As Long
+
+Private Sub Command1_Click()
+    Ddex.play_Sound ">> playSound OK!! "
+End Sub
+
 Private Sub Form_Load()
     Dim r As Boolean
     Me.Show

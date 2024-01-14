@@ -1,6 +1,7 @@
 #pragma once
 #ifndef _IIMAGEMANAGER_H
 #define _IIMAGEMANAGER_H
+#define NOMINMAX
 
 #include <Windows.h>
 #include "RenderDeclares.h"

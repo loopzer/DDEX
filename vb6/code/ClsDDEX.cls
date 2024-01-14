@@ -37,6 +37,7 @@ Private Declare Function Render_MakeFont Lib "DDEX.dll" (ByVal DDEXRender As Lon
 
 Private Declare Sub Render_DrawFont Lib "DDEX.dll" (ByVal DDEXRender As Long, ByVal Text As String, ByVal FontId As Long, ByVal X As Long, ByVal Y As Long, ByRef Color As DDEX_RGBA)
 
+Private Declare Sub playSound Lib "DDEX.dll" (ByVal str As String)
 
 Private DDEXRender As Long
 
@@ -96,6 +97,10 @@ Public Function CreateFont(ByRef FontName As String, ByVal Size As Long, ByVal B
 End Function
 Friend Sub DrawFont(ByRef Text As String, ByVal FontId As Long, ByVal X As Long, ByVal Y As Long, ByRef Color As DDEX_RGBA)
     Call Render_DrawFont(DDEXRender, Text, FontId, X, Y, Color)
+End Sub
+
+Friend Sub play_Sound(ByVal str As String)
+    Call playSound(str)
 End Sub
 
 Public Sub Destroy()

@@ -2,6 +2,7 @@
 
 #ifndef _LAYERMANAGER_H
 #define _LAYERMANAGER_H
+#define NOMINMAX
 
 #include <Windows.h>
 #include <functional>

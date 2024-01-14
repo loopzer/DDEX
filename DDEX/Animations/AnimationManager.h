@@ -2,6 +2,8 @@
 #ifndef _ANIMATIONMANAGER_H
 #define _ANIMATIONMANAGER_H
 
+#define NOMINMAX
+
 #include <Windows.h>
 #include "../Render/RenderDeclares.h"
 #include "../Render/IPSManager.h"

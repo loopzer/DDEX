@@ -2,6 +2,8 @@
 #ifndef _LIGHTBOLTAUTOMATICANIMATION_H
 #define _LIGHTBOLTAUTOMATICANIMATION_H
 
+#define NOMINMAX
+
 #include <Windows.h>
 #include "../Render/RenderDeclares.h"
 #include "../Render/Colors.h"

@@ -1,6 +1,7 @@
 #pragma once
 #ifndef _COLORS_H
 #define _COLORS_H
+#define NOMINMAX
 
 #include <Windows.h>
 #include "RenderDeclares.h"

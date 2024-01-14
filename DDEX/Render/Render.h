@@ -2,6 +2,8 @@
 #ifndef _RENDER_H
 #define _RENDER_H
 
+#define NOMINMAX
+
 #include <Windows.h>
 #include "RenderDeclares.h"
 

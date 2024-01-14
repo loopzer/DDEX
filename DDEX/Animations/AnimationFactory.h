@@ -2,6 +2,8 @@
 #ifndef _ANIMATIONFACTORY_H
 #define _ANIMATIONFACTORY_H
 
+#define NOMINMAX
+
 #include <Windows.h>
 #include "AnimationDeclares.h"
 #include "IAnimation.h"

@@ -1,6 +1,7 @@
 #pragma once
 #ifndef _IRENDERPRIMITIVE_H
 #define _IRENDERPRIMITIVE_H
+#define NOMINMAX
 
 #include <Windows.h>
 #include "RenderDeclares.h"

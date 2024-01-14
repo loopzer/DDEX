@@ -1,6 +1,7 @@
 #pragma once
 #ifndef _SIMPLESHADERLAYEREFFECT_H
 #define _SIMPLESHADERLAYEREFFECT_H
+#define NOMINMAX
 
 #include <Windows.h>
 #include "LayerManager.h"

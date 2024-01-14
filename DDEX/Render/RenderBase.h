@@ -3,6 +3,8 @@
 #ifndef _RENDERBASE_H
 #define _RENDERBASE_H
 
+#define NOMINMAX
+
 #include <Windows.h>
 #include <math.h>
 #include "RenderDeclares.h"

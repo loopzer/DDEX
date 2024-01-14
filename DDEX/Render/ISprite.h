@@ -1,6 +1,7 @@
 #pragma once
 #ifndef _ISPRITE_H
 #define _ISPRITE_H
+#define NOMINMAX
 
 #include <Windows.h>
 #include "RenderDeclares.h"

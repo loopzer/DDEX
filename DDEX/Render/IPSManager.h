@@ -1,6 +1,7 @@
 #pragma once
 #ifndef _IPSMANAGER_H
 #define _IPSMANAGER_H
+#define NOMINMAX
 
 #include <Windows.h>
 #include "RenderDeclares.h"

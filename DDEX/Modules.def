@@ -1,6 +1,7 @@
 LIBRARY DDEX
 
 EXPORTS
+	playSound
 	Test
 	Render_Create
 	Render_Present

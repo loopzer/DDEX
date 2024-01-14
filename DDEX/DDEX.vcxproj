@@ -71,6 +71,9 @@
     <LinkIncremental>false</LinkIncremental>
     <IgnoreImportLibrary>true</IgnoreImportLibrary>
     <OutDir>$(SolutionDir)Output\</OutDir>
+    <ExternalIncludePath>$(SolutionDir)OPENAL_LIB_INCLUDES;$(ExternalIncludePath)</ExternalIncludePath>
+    <ReferencePath>$(SolutionDir)OPENAL_LIB_BUILT\debug\OpenAL;$(ReferencePath)</ReferencePath>
+    <PublicIncludeDirectories>$(PublicIncludeDirectories)</PublicIncludeDirectories>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -119,6 +122,7 @@
       <Profile>true</Profile>
       <ImportLibrary>
       </ImportLibrary>
+      <AdditionalDependencies>$(SolutionDir)DDEX\OPENAL_LIB_BUILT\debug\OpenAL\OpenAL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ProjectReference>
       <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
@@ -270,6 +274,7 @@
     <ClInclude Include="Animations\IAnimationFactory.h" />
     <ClInclude Include="Animations\LightBoltAnimation.h" />
     <ClInclude Include="Animations\LightBoltAutomaticAnimation.h" />
+    <ClInclude Include="Audio.h" />
     <ClInclude Include="Benaphore.h" />
     <ClInclude Include="ColorAnimation.h" />
     <ClInclude Include="ContextBase.h" />

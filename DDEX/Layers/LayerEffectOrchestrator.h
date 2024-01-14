@@ -1,6 +1,7 @@
 #pragma once
 #ifndef _LAYEREFFECTORCHESTRATOR_H
 #define _LAYEREFFECTORCHESTRATOR_H
+#define NOMINMAX
 
 #include <Windows.h>
 #include <functional>

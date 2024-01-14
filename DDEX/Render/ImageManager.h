@@ -1,6 +1,7 @@
 #pragma once
 #ifndef _IMAGEMANAGER_H
 #define _IMAGEMANAGER_H
+#define NOMINMAX
 
 #include <stdio.h>
 #include <Windows.h>

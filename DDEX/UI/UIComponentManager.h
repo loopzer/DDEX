@@ -1,4 +1,7 @@
 #pragma once
+
+#define NOMINMAX
+
 #include <Windows.h>
 #include "UI.h"
 #include "IHDCFactory.h"

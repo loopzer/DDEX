@@ -1,6 +1,7 @@
 #pragma once
 #ifndef _VIBRATIONLAYEREFFECT_H
 #define _VIBRATIONLAYEREFFECT_H
+#define NOMINMAX
 
 #include <Windows.h>
 #include <functional>

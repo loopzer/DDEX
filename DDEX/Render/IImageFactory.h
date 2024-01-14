@@ -1,6 +1,7 @@
 #pragma once
 #ifndef _IIMAGEFACTORY_H
 #define _IIMAGEFACTORY_H
+#define NOMINMAX
 
 #include <Windows.h>
 #include "RenderDeclares.h"

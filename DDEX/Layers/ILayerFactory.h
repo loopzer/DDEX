@@ -1,6 +1,7 @@
 #pragma once
 #ifndef _ILAYERFACTORY_H
 #define _ILAYERFACTORY_H
+#define NOMINMAX
 
 #include <Windows.h>
 #include <functional>

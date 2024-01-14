@@ -2,6 +2,8 @@
 #ifndef _IANIMATION_H
 #define _IANIMATION_H
 
+#define NOMINMAX
+
 #include <Windows.h>
 
 #include "../Render/RenderDeclares.h"
